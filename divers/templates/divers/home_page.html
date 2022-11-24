@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+   <p>Page d'acceuil</p>
+    <p>{{test}}</p>
+
+<ul>
+    {% for day in weekdays  %}
+    
+        <li>{{day}}</li>
+    
+    {% endfor %}
+</ul>
+
+<button  > <a href={% url 'about'%}>about</a>
+    </button>
+
+{% endblock content %}

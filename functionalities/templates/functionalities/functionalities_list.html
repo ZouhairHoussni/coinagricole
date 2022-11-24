@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<ul>
+{% for function in object_list  %}
+
+
+
+    <li>{{function.name}}</li>
+
+
+
+
+{% endfor %}
+</ul>
+
+
+{% endblock content %}
